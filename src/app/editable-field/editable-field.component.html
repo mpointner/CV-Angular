@@ -1,0 +1,7 @@
+<input *ngIf="editable; else notEditable" type="text" [ngModel]="value" width="80%" (ngModelChange)="change($event)">
+<ng-template #notEditable>
+  <span *ngIf="htmlvalue; else notHTML" [innerHTML]="value"></span>
+  <ng-template #notHTML>
+    <span *ngIf="showValue">{{value}}</span>
+  </ng-template>
+</ng-template>

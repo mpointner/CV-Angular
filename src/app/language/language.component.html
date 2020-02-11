@@ -1,0 +1,25 @@
+<div *ngIf="document">
+  <div *ngIf="document['body']; else multipleLanguages">
+    <app-main [editable]="editable" [document]="document"></app-main>
+  </div>
+  <ng-template #multipleLanguages>
+    <div class="language printHidden" style="text-align: center;">
+    <span *ngFor="let language of document | keyvalue">
+      <span *ngIf="!editable; else edit">
+        <img src="{{language.value['attributes']['image']}}" alt="{{language.key}}"
+             (click)="changeLanguage(language.key)"
+             *ngIf="language.value['attributes']['image'] !== undefined; else notImage">
+        <ng-template #notImage>
+          <button (click)="changeLanguage(language.key)">{{language.key}}</button>
+        </ng-template>
+      </span>
+      <ng-template #edit>
+        <app-editable-field [editable]="editable"
+                            [(value)]="language.value['attributes']['image']"></app-editable-field>
+      </ng-template>
+    </span>
+    </div>
+
+    <app-main [editable]="editable" [document]="document[selectedLanguage]"></app-main>
+  </ng-template>
+</div>

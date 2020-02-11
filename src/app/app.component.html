@@ -1,0 +1,17 @@
+<router-outlet></router-outlet>
+
+
+<div class="container">
+  <div class="paper">
+    <div class="content">
+      <div style="text-align: center" class="editIcons color">
+        <input name="fileChooser" id="fileChooser" type='file' (change)="fileChanged($event)" value="Import CV XML File" style="display: none;">
+        <label for="fileChooser">Import CV</label>
+        &nbsp;&nbsp;
+        <button (click)="editable = !editable">{{getEditButtonValue()}}</button>
+      </div>
+
+      <app-language [editable]="editable" [document]="document['document']"></app-language>
+    </div>
+  </div>
+</div>

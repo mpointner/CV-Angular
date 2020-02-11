@@ -1,0 +1,197 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+  font-family: Helvetica;
+  font-size: 20px;
+  margin: 0;
+  background: gray;
+}
+
+h1 {
+  margin-bottom: 0.5em;
+  font-size: 1.4em;
+}
+
+h2 {
+  font-size: 1.2em;
+  margin-top: 0.4em;
+  margin-bottom: 0.4em;
+  margin-left: 2em;
+}
+
+h3:first-child {
+  margin-top: 0;
+}
+
+h3 {
+  margin-bottom: 0.5em;
+}
+
+@colorDefault: #143066;
+.color, .color u, .color button, .color label {
+  color: @colorDefault;
+  border-color: @colorDefault;
+  button:hover, label:hover, button:active, label:active {
+    background-color: #143066;
+    color: white;
+  }
+}
+
+@colorTone1: 208;
+.color1, .color1 u, .color1  button, .color1 input {
+  border-color: hsl(@colorTone1, 50%, 50%);
+  color: hsl(@colorTone1, 50%, 40%);
+  button:hover, label:hover, button:active, label:active {
+    background-color: hsl(@colorTone1, 50%, 40%);
+    color: white;
+  }
+}
+
+@colorTone2: 142;
+.color2, .color2 u, .color2 button, .color2 input {
+  border-color: hsl(@colorTone2, 50%, 50%);
+  color: hsl(@colorTone2, 50%, 40%);
+  button:hover, label:hover, button:active, label:active {
+    background-color: hsl(@colorTone2, 50%, 40%);
+    color: white;
+  }
+}
+
+@colorTone3: 64;
+.color3, .color3 u, .color3 button, .color3 input {
+  border-color: hsl(@colorTone3, 50%, 50%);
+  color: hsl(@colorTone3, 50%, 40%);
+  button:hover, label:hover, button:active, label:active {
+    background-color: hsl(@colorTone3, 50%, 40%);
+    color: white;
+  }
+}
+
+@colorTone4: 28;
+.color4, .color4 u, .color4 button, .color4 input {
+  border-color: hsl(@colorTone4, 50%, 50%);
+  color: hsl(@colorTone4, 50%, 40%);
+  button:hover, label:hover, button:active, label:active {
+    background-color: hsl(@colorTone4, 50%, 40%);
+    color: white;
+  }
+}
+
+@colorTone5: 0;
+.color5, .color5 u, .color5 button, .color5 input {
+  border-color: hsl(@colorTone5, 50%, 50%);
+  color: hsl(@colorTone5, 50%, 40%);
+  button:hover, label:hover, button:active, label:active {
+    background-color: hsl(@colorTone5, 50%, 40%);
+    color: white;
+  }
+}
+
+@colorTone6: 300;
+.color6, .color6 u, .color6 button, .color6 input {
+  border-color: hsl(@colorTone6, 50%, 50%);
+  color: hsl(@colorTone6, 50%, 40%);
+  button:hover, label:hover, button:active, label:active {
+    background-color: hsl(@colorTone6, 50%, 40%);
+    color: white;
+  }
+}
+
+@colorTone7: 269;
+.color7, .color7 u, .color7 button, .color7 input {
+  border-color: hsl(@colorTone7, 50%, 50%);
+  color: hsl(@colorTone7, 50%, 50%);
+  button:hover, label:hover, button:active, label:active {
+    background-color: hsl(@colorTone7, 50%, 40%);
+    color: white;
+  }
+}
+
+@colorTone8: 260;
+.color8, .color8 u, .color8 button, .color8 input {
+  border-color: hsl(@colorTone8, 50%, 50%);
+  color: hsl(@colorTone8, 50%, 50%);
+  button:hover, label:hover, button:active, label:active {
+    background-color: hsl(@colorTone8, 50%, 40%);
+    color: white;
+  }
+}
+
+@colorTone9: 250;
+.color9, .color9 u, .color9 button, .color9 input {
+  border-color: hsl(@colorTone9, 50%, 50%);
+  color: hsl(@colorTone9, 50%, 50%);
+  button:hover, label:hover, button:active, label:active {
+    background-color: hsl(@colorTone9, 50%, 40%);
+    color: white;
+  }
+}
+
+@colorTone10: 240;
+.color10, .color10 u, .color10 button, .color10 input {
+  border-color: hsl(@colorTone10, 50%, 50%);
+  color: hsl(@colorTone10, 50%, 50%);
+  button:hover, label:hover, button:active, label:active {
+    background-color: hsl(@colorTone10, 50%, 40%);
+    color: white;
+  }
+}
+
+@colorTone11: 230;
+.color11, .color11 u, .color11 button, .color11 input {
+  border-color: hsl(@colorTone11, 50%, 50%);
+  color: hsl(@colorTone11, 50%, 50%);
+  button:hover, label:hover, button:active, label:active {
+    background-color: hsl(@colorTone11, 50%, 40%);
+    color: white;
+  }
+}
+
+@colorTone12: 230;
+.color12, .color12 u, .color12 button, .color12 input {
+  border-color: hsl(@colorTone12, 50%, 50%);
+  color: hsl(@colorTone12, 50%, 50%);
+  button:hover, label:hover, button:active, label:active {
+    background-color: hsl(@colorTone12, 50%, 40%);
+    color: white;
+  }
+}
+
+button {
+  cursor: pointer;
+}
+
+button, input, label {
+  background: transparent;
+  border: 1px solid;
+}
+
+input {
+  /*color: black !important;*/
+}
+
+label {
+  font: 400 13.3333px Arial;
+  padding: 1px 6px;
+}
+
+.bereich .fas, .anschrift .fas {
+  margin-right: 0em;
+  height: 1.25em;
+  width: 1.875em;
+  text-align: center;
+  -webkit-print-color-adjust: exact;
+  display: inline-block;
+}
+
+u {
+  text-decoration: none;
+}
+
+a {
+  /*text-decoration: none;*/
+  color: black;
+}
+
+.label, .date, .location, sub, .legend, .gray, a.gray {
+  color: #AAA;
+}

@@ -1,0 +1,114 @@
+<document>
+  <en image="https://cdn1.iconfinder.com/data/icons/stripe-flag-set/23/GB.png">
+    <title>CV</title>
+    <favicon>https://cdn.pixabay.com/photo/2015/03/04/22/35/head-659652_960_720.png</favicon>
+    <head>
+      <letterhead>
+        <nameWithTitle>John Doe, M.A.</nameWithTitle>
+        <adress>23 Bedford St, Covent Garden, London, U.K.</adress>
+        <phone>+1234567</phone>
+        <email>john@doe.co.uk</email>
+      </letterhead>
+      <image>https://cdn.pixabay.com/photo/2015/03/04/22/35/head-659652_960_720.png</image>
+      <title>Curriculum Vitae</title>
+      <name>John Doe</name>
+    </head>
+    <body>
+      <column>
+        <category title="Education" icon="fa-graduation-cap">
+          <item name="Master Program">
+            <date>Oct 2018 - Present</date>
+            <location>University</location>
+            <description>
+              <u>Subject:</u>
+              Computer Science
+            </description>
+          </item>
+        </category>
+        <category title="Programming skills" icon="fa-code">
+          <item name="Web">
+            <date></date>
+            <location></location>
+            <description>HTML<sub>E</sub>, CSS<sub>E</sub>
+            </description>
+          </item>
+          <legend>B=Basic<br/>A=Advanced<br/>E=Expert
+          </legend>
+        </category>
+        <qr linkText="View online:" dateText="Last updated:" float="left"/>
+      </column>
+      <column>
+        <category title="Employment" icon="fa-briefcase">
+          <item name="Software Developer">
+            <date>Jul 2018 - May 2019</date>
+            <location>Company Ltd., GB</location>
+            <description>
+              <u>Projects:</u>
+              Membership administration software
+            </description>
+          </item>
+        </category>
+        <category title="Languages" icon="fa-language">
+          <item name="German, English" />
+        </category>
+      </column>
+    </body>
+  </en>
+  <de image="https://cdn1.iconfinder.com/data/icons/stripe-flag-set/23/AT.png">
+    <title>Lebenslauf</title>
+    <favicon>images/favicon.ico</favicon>
+    <head>
+      <languages>
+        <en image="https://cdn1.iconfinder.com/data/icons/stripe-flag-set/23/GB.png"/>
+        <de image="https://cdn1.iconfinder.com/data/icons/stripe-flag-set/23/DE.png"/>
+        <es image="https://cdn1.iconfinder.com/data/icons/stripe-flag-set/23/ES.png"/>
+      </languages>
+      <letterhead>
+        <nameWithTitle>John Doe, M.A.</nameWithTitle>
+        <adress>23 Bedford St, Covent Garden, London, U.K.</adress>
+        <phone>+1234567</phone>
+        <email>john@doe.co.uk</email>
+      </letterhead>
+      <image>https://cdn.pixabay.com/photo/2015/03/04/22/35/head-659652_960_720.png</image>
+      <title>Curriculum Vitae</title>
+      <name>John Doe</name>
+    </head>
+    <body>
+      <column>
+        <category title="Ausbildung" icon="fa-graduation-cap">
+          <item name="Masterstudium)">
+            <date>Okt. 2018 - dato</date>
+            <location>Universität</location>
+            <description>
+              <u>Unterrichtsfach:</u>
+              Informatik
+            </description>
+          </item>
+        </category>
+        <category title="Programmierkenntnisse" icon="fa-code">
+          <item name="Web">
+            <description>HTML<sub>E</sub>, CSS<sub>E</sub></description>
+          </item>
+          <legend>B=Basiskenntnisse<br/>F=Fortgeschritten<br/>V=Vertiefend
+          </legend>
+        </category>
+        <qr linkText="Online ansehen:" dateText="Stand:" float="left"/>
+      </column>
+      <column>
+        <category title="Berufspraxis" icon="fa-briefcase">
+          <item name="Software Entwickler">
+            <date>Jul 2018 - Mai 2019</date>
+            <location>Firma GmbH, GB</location>
+            <description>
+              <u>Projekte:</u>
+              Mitgliederverwaltung
+            </description>
+          </item>
+        </category>
+        <category title="Sprachen" icon="fa-language">
+          <item name="Deutsch, Englisch" />
+        </category>
+      </column>
+    </body>
+  </de>
+</document>

@@ -1,0 +1,26 @@
+<app-head [(head)]="document['head']" [editable]="editable"></app-head>
+
+<div class="columns" cdkDropListGroup>
+  <div class="column" *ngFor="let column of document['body']['column'] | keyvalue; let i = index"
+       cdkDropList
+       [cdkDropListData]="column.value"
+       (cdkDropListDropped)="drop($event)">
+    <div *ngFor="let category of column.value['category'] | keyvalue; let j = index" cdkDrag>
+      <!--
+      <div class="editIcons">
+        <fa-icon icon="arrows-alt" alt="" class="dragHandle" cdkDragHandle></fa-icon>
+        <br>
+        <fa-icon icon="trash-alt" alt="" (click)="delete(i, j)"></fa-icon>
+      </div>
+      -->
+
+      <app-category [(category)]="category.value" [editable]="editable" [color]="getColor(i, j)" [i]="i" [j]="j" (deleteCategoryEmitter)="deleteCategory($event)" class="columnContent"></app-category>
+    </div>
+    <div style="text-align: right" class="printHidden editIcons">
+      <fa-icon icon="plus" alt="" (click)="addCategory(i)"></fa-icon>
+    </div>
+  </div>
+</div>
+<div style="text-align: right" class="printHidden editIcons">
+  <fa-icon icon="plus" alt="" (click)="addColumn()"></fa-icon>
+</div>

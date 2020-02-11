@@ -1,0 +1,45 @@
+.bereich {
+  page-break-inside: avoid;
+  background-color: transparent;
+  /*margin-left: 0.5em;
+  margin-right: 0.5em;*/
+}
+
+.items {
+  /*padding-left:0.5em;*/
+  background-color: transparent;
+  border-left: 0.25em dotted;
+  margin-left: 1em;
+  padding-left: 1em;
+}
+
+.categoryIcon {
+  margin-left: -2em;
+}
+
+@sizeEditIcons: 1em;
+@topEditIcons: 2.5em;
+@moveEditIcons: - @sizeEditIcons - @topEditIcons;
+
+.dragHandle {
+  cursor: move;
+  width: @sizeEditIcons;
+  height: @sizeEditIcons;
+}
+
+.editIcons {
+  cursor: pointer;
+  /*
+  top: @topEditIcons;
+  left: -1.2em;
+  margin-bottom: @moveEditIcons;
+  font-size: @sizeEditIcons;
+  */
+}
+
+.legend {
+  float: right;
+  margin-top: -5.0em;
+  font-size: 0.8em;
+  color: #AAA;
+}

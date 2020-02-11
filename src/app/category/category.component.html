@@ -1,0 +1,41 @@
+<div class="bereich color{{color}}" id="bereich{{color}}">
+
+  <h2 style="cursor: pointer;">
+    <fa-icon icon="{{category['attributes']['icon'] | iconName}}" class="categoryIcon fas"></fa-icon>
+    <app-editable-field *ngIf="editable; else notEditable" [editable]="editable" [(value)]="category['attributes']['icon']" [showValue]="false"></app-editable-field>
+
+    <app-editable-field [editable]="editable" [(value)]="category['attributes']['title']"></app-editable-field>
+
+    <span class="editIcons" *ngIf="!editable">
+      &nbsp;<fa-icon icon="edit" (click)="edit()"></fa-icon>
+      &nbsp;<fa-icon icon="trash-alt" (click)="deleteCategory()"></fa-icon>&nbsp;
+      <fa-icon icon="plus" (click)="add()"></fa-icon>
+    </span>
+
+    <i class="fas fa-caret-down" alt="" *ngIf="!editable"></i>
+
+    <div *ngIf="editable" style="text-align: right">
+      <button (click)="editable = false">Finish editing category</button>
+    </div>
+  </h2>
+
+  <div cdkDropList class="items color{{color}}" id="items{{color}}" (cdkDropListDropped)="drop($event)">
+    <div *ngIf="categoryIsArray; else notArray">
+      <div *ngFor="let item of category['item'] | keyvalue" cdkDrag>
+        <!--
+        <div class="editIcons">
+          <fa-icon icon="arrows-alt" alt="" class="dragHandle" cdkDragHandle></fa-icon>
+          <fa-icon icon="trash-alt" alt="" (click)="delete(item.key)"></fa-icon>
+        </div>
+        -->
+        <app-item [(item)]="item.value" [editable]="editable" class="item" [i]="item.key" (deleteItemEmitter)="delete($event)"></app-item>
+      </div>
+    </div>
+    <ng-template #notArray>
+      <app-item [(item)]="category['item']" [editable]="editable" class="item" [i]="0" (deleteItemEmitter)="deleteItem($event)"></app-item>
+    </ng-template>
+
+  </div>
+
+  <div *ngIf="category.legend" class="legend" [innerHTML]="category['legend']"></div>
+</div>

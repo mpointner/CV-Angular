@@ -1,0 +1,23 @@
+<div class="item">
+  <div class="top" *ngIf="editable || item['location'] || item['date']">
+    <div class="date" *ngIf="editable || item['date']"><fa-icon icon="calendar-alt" alt="Date: "></fa-icon>
+      <app-editable-field [editable]="editable" [(value)]="item['date']"></app-editable-field>
+    </div>
+    <div class="location" *ngIf="editable || item['location']"><fa-icon icon="map-marker-alt" alt="Location: "></fa-icon>
+      <app-editable-field [editable]="editable" [(value)]="item['location']"></app-editable-field>
+    </div>
+  </div>
+  <div class="name" *ngIf="editable || (item['attributes'] && item['attributes']['name'])">
+    <app-editable-field [editable]="editable" [(value)]="item['attributes']['name']"></app-editable-field>
+    <span class="editIcons" *ngIf="!editable">
+      &nbsp;<fa-icon icon="edit" alt="" (click)="edit()"></fa-icon>
+      &nbsp;<fa-icon icon="trash-alt" alt="" (click)="delete()"></fa-icon>
+    </span>
+  </div>
+  <div class="description" *ngIf="editable || item['description']"><!-- *ngIf="description"-->
+    <app-editable-field [editable]="editable" [value]="item['description']" [htmlvalue]="true"></app-editable-field>
+  </div>
+  <div *ngIf="editable" style="text-align: right">
+    <button (click)="editable = false">Finish editing item</button>
+  </div>
+</div>

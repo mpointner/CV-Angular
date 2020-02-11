@@ -1,0 +1,40 @@
+<div class="bildBereich">
+  <app-editable-field [editable]="editable" [(value)]="head['image']"
+                      *ngIf="editable; else notEditable"></app-editable-field>
+  <ng-template #notEditable>
+    <img src="{{head['image']}}" class="bild">
+  </ng-template>
+</div>
+
+<div class="anschrift">
+  <div style="max-width: 40%">
+    <fa-icon icon="user" alt=""></fa-icon>
+    <app-editable-field [editable]="editable" [(value)]="head['letterhead']['nameWithTitle']" [htmlvalue]="true"></app-editable-field>
+    <br>
+    <fa-icon icon="envelope" alt=""></fa-icon>
+    <app-editable-field [editable]="editable" [(value)]="head['letterhead']['adress']" [htmlvalue]="true"></app-editable-field>
+    <br>
+    <fa-icon icon="phone" alt=""></fa-icon>
+    <a href="tel:">
+      <app-editable-field [editable]="editable" [(value)]="head['letterhead']['phone']" [htmlvalue]="true"></app-editable-field>
+    </a><br>
+    <fa-icon icon="at" alt=""></fa-icon>
+    <a href="mailto:">
+      <app-editable-field [editable]="editable" [(value)]="head['letterhead']['email']" [htmlvalue]="true"></app-editable-field>
+    </a>
+  </div>
+  <!--
+  <div class="addressHidden printHidden gray" style="margin-left: -2em;">
+    Aus Datenschutzgründen <br>ist der Briefkopf in dieser <br>Online-Version ausgeblendet.
+    For privacy reasons the <br>letter head is hidden <br>in this online version.
+  </div>
+  -->
+</div>
+
+<h3 align="center">
+  <app-editable-field [editable]="editable" [(value)]="head['title']"></app-editable-field>
+</h3>
+<h1 align="center" style="margin-top:0; margin-bottom:0px;">
+  <app-editable-field [editable]="editable" [(value)]="head['name']"></app-editable-field>
+</h1>
+

@@ -1,0 +1,214 @@
+<document>
+    <title>CV Michael Pointner</title>
+    <favicon>images/favicon.ico</favicon>
+    <head>
+        <languages>
+            <de image="https://cdn1.iconfinder.com/data/icons/stripe-flag-set/23/AT.png"/>
+            <en image="https://cdn1.iconfinder.com/data/icons/stripe-flag-set/23/GB.png"/>
+        </languages>
+        <letterhead>
+            <nameWithTitle>Michael Pointner, BSc BEd</nameWithTitle>
+            <adress>Vorgarten<wbr/>straße 129-143/1/17, 1020 Vienna, Austria
+            </adress>
+            <phone>+43 650 9866410</phone>
+            <email>michael@<wbr/>pointner.info
+            </email>
+        </letterhead>
+        <image>images/image.png</image>
+        <title></title>
+        <name>Michael Pointner</name>
+    </head>
+    <body>
+        <column>
+            <category title="Education" icon="fa-graduation-cap">
+                <item name="Master Teacher Training Program">
+                    <date>Oct 2018 - Present</date>
+                    <location>University of Vienna</location>
+                    <description>
+                        <u>Subjects:</u>
+                        Computer Science and Mathematics
+                    </description>
+                </item>
+                <item name="Master Program Visual Computing">
+                    <date>Mar 2018 - Present</date>
+                    <location>TU Wien</location>
+					<description>
+						<u>Thesis:</u>
+                        Human-centric best image selection on photo series
+					</description>
+                </item>
+                <item name="Bachelor Teacher Training Program">
+                    <date>Okt 2014 - Jul 2018</date>
+                    <location>University of Vienna</location>
+                    <description>
+                        <u>Subjects:</u>
+                        Computer Science and Mathematics
+                        <br/>
+                        <u>Thesis Computer Science:</u>
+                        Privacy compliant alternatives to Facebook, WhatsApp, Google &amp; Co. for Austrian schools in
+                        Moodle
+                        <br/>
+                        <u>Thesis Mathematics:</u>
+                        Public Key Cryptography
+                    </description>
+                </item>
+                <item name="Bachelor Program Media Informatics and Visual Computing">
+                    <date>Okt 2014 - Sep 2017</date>
+                    <location>TU Wien</location>
+                    <description>
+                        <u>Thesis:</u>
+                        All-in-Focus Image Generation using Automatic Depth-Based Focus Selection
+                    </description>
+                </item>
+                <item name="Music and Art high school">
+                    <date>Aug 2011 - Jun 2012</date>
+                    <location>Armando Dufey Blanc High School, Temuco, Chile</location>
+                    <description>Student exchange program</description>
+                </item>
+                <item name="Technical college">
+                    <date>Sep 2008 - Jun 2013</date>
+                    <location>Technical College, Braunau/Inn</location>
+                    <description>
+                        <u>Specialization:</u>
+                        Media Engineering und Communication
+                        <br/>
+                        <u>Thesis:</u>
+                        Android app for controlling the settings of musical instruments
+                    </description>
+                </item>
+            </category>
+            <category title="Programming skills" icon="fa-code">
+                <item name="Web">
+                    <date></date>
+                    <location></location>
+                    <description>HTML<sub>E</sub>, CSS<sub>E</sub> (Less<sub>A</sub>), PHP<sub>E</sub>, JavaScript<sub>E
+                    </sub> (ReactJS<sub>E</sub>, Angular<sub>B</sub>, D3<sub>B</sub>), JaveEE<sub>A</sub> (REST<sub>
+                        A</sub>, Thymeleaf<sub>A</sub>, JSP<sub>A</sub>, Servlets<sub>B</sub>)
+                    </description>
+                </item>
+                <item name="Desktop">
+                    <date></date>
+                    <location></location>
+                    <description>Java<sub>E</sub> (Spring<sub>A</sub>, JPA<sub>A</sub>, Flyway<sub>B</sub>), C++<sub>E</sub> (OpenGL<sub>
+                        A</sub>, OpenCV<sub>B</sub>), Matlab<sub>E</sub>, Latex<sub>E</sub>, C#<sub>A</sub>, Halcon<sub>A</sub>, R<sub>B</sub>, Labview<sub>
+                        B</sub>, Docker<sub>A</sub>, Ansible<sub>B</sub>
+                    </description>
+                </item>
+                <item name="Mobile">
+                    <description>Android<sub>A</sub>, Swift<sub>A</sub>
+                    </description>
+                </item>
+                <item name="">
+                    <date></date>
+                    <location></location>
+                    <description>Git<sub>E</sub>, SVN<sub>B</sub>, Gradle<sub>A</sub>, Maven<sub>A</sub>
+                    </description>
+                </item>
+                <legend>B=Basic<br/>A=Advanced<br/>E=Expert
+                </legend>
+            </category>
+            <category title="Languages" icon="fa-language">
+                <item name="German (Mother tongue), English (C1), Spanish (B2)">
+                    <date></date>
+                    <location></location>
+                    <description>Apart from school and university, English knowledge was also expanded on three
+                        different language courses (2 in Austria, 1 in UK) and Spanish on the student exchange program
+                        in Chile, the development aid program in Nicaragua and at work in Mexico.
+                        <span class="gray">Levels: A1 and A2: Basic user - B1 and B2: Independent user - C1 and C2:
+                            Proficient user -
+                            <a href="https://europass.cedefop.europa.eu/resources/european-language-levels-cefr"
+                               target="_blank" class="gray">Common European Framework of Reference for Languages
+                            </a>
+                        </span>
+                    </description>
+                </item>
+            </category>
+            <qr linkText="View online:" dateText="Last updated:" float="left"/>
+        </column>
+        <column>
+            <category title="Employment" icon="fa-briefcase">
+                <item name="Software Developer">
+                    <date>Jul - Aug 2018, Sep 2017, Jul - Aug 2016</date>
+                    <location>Catalysts Ltd., Vienna</location>
+                    <description>
+                        <u>Projects:</u>
+                        Restructuring and building Docker containers of Web-APIs for the b2b interface of DB Schenker
+                        for better maintainability; Web-based membership administration software for Austria`s
+                        industrial association
+                    </description>
+                </item>
+                <item name="Software Developer">
+                    <date>Sep 2013 - Aug 2014</date>
+                    <location>Weitblick systems Ltd., Gurten</location>
+                    <description>Software Development on industrial camera systems<br/>Foreign assembly of finished
+                        project at Nemak Ltd. in Mexico
+                    </description>
+                </item>
+                <item name="Data Analyst">
+                    <date>Jul 2011</date>
+                    <location>Liwest Ltd., Linz</location>
+                    <description>Data analysis and reporting</description>
+                </item>
+                <item name="Sytem administrator">
+                    <date>Jul 2010, Jul 2009</date>
+                    <location>BOM Ltd., Aspach</location>
+                    <description>IT-infrastructure management for small and medium-sized enterprises</description>
+                </item>
+            </category>
+            <category title="Awards and scholarships" icon="fa-trophy">
+                <item name="Catalysts Coding Contest">
+                    <date>2014 - 2018</date>
+                    <location>Catalysts Ltd., Vienna/Linz</location>
+                    <description>
+                        <u>Awards:</u>
+                        3x silver medal, 1x bronze medal
+                    </description>
+                </item>
+                <item name="Merit-based scholarship">
+                    <date>2016 - 2018</date>
+                    <location>TU Wien (2x), University of Vienna</location>
+                    <description></description>
+                </item>
+            </category>
+            <category title="Social activities and community work" icon="fa-hands-helping">
+                <item name="Ball opening committee">
+                    <date>Jan 2017 - Present</date>
+                    <location>Dance school Chris, Vienna</location>
+                    <description></description>
+                </item>
+                <item name="Development aid and interpreter (Spanish)">
+                    <date>Jul 2013</date>
+                    <location>La Salle Polytechnic Institute, León, Nicaragua</location>
+                    <description></description>
+                </item>
+                <item name="Publicity work and school magazine author">
+                    <date>School year 2012 - 2013</date>
+                    <location>Technical college, Braunau/Inn</location>
+                    <description></description>
+                </item>
+            </category>
+            <category title="Teaching practice" icon="fa-chalkboard-teacher">
+                <item name="Subject-based Internship - Computer Science">
+                    <date>SS2018</date>
+                    <location>Grammar school ERG Donaustadt, Vienna</location>
+                    <description></description>
+                </item>
+                <item name="Subject-based Internship - Mathematics">
+                    <date>WS2017</date>
+                    <location>Grammar school GRG Franklinstraße 21, Vienna</location>
+                    <description></description>
+                </item>
+                <item name="Seminar School Research and Teaching Practice">
+                    <date>SS2017</date>
+                    <location>Secondary school St. Elisabeth, Vienna</location>
+                    <description></description>
+                </item>
+                <item name="Orientation Internship">
+                    <date>WS2015</date>
+                    <location>Grammar school GRG 21 Bertha von Suttner, Vienna</location>
+                    <description></description>
+                </item>
+            </category>
+        </column>
+    </body>
+</document>
