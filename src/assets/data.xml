@@ -56,7 +56,7 @@
   </en>
   <de image="https://cdn1.iconfinder.com/data/icons/stripe-flag-set/23/AT.png">
     <title>Lebenslauf</title>
-    <favicon>images/favicon.ico</favicon>
+    <favicon>https://cdn.pixabay.com/photo/2015/03/04/22/35/head-659652_960_720.png</favicon>
     <head>
       <letterhead>
         <nameWithTitle>John Doe, M.A.</nameWithTitle>
@@ -65,7 +65,7 @@
         <email>john@doe.co.uk</email>
       </letterhead>
       <image>https://cdn.pixabay.com/photo/2015/03/04/22/35/head-659652_960_720.png</image>
-      <title>Curriculum Vitae</title>
+      <title>Lebenslauf</title>
       <name>John Doe</name>
     </head>
     <body>
